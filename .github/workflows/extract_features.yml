@@ -1,0 +1,59 @@
+name: Daily Feature Data Extraction
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+
+jobs:
+  extract-data:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: Run feature extraction script
+      env:
+        HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
+        HOPSWORKS_PROJECT: ${{ secrets.HOPSWORKS_PROJECT }}
+      run: |
+        python scripts/features_data.py
+        
+    - name: Check extracted CSV files
+      run: |
+        echo "Checking extracted CSV files:"
+        ls -la backend/data/
+        for horizon in 24h 48h 72h; do
+          file="backend/data/horizon_${horizon}_data.csv"
+          if [ -f "$file" ]; then
+            echo "${horizon} data file created successfully"
+            wc -l "$file"
+          else
+            echo "Missing file: $file"
+          fi
+        done
+        
+    - name: Commit and push only horizon data CSVs
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add backend/data/horizon_24h_data.csv || true
+        git add backend/data/horizon_48h_data.csv || true
+        git add backend/data/horizon_72h_data.csv || true
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Update horizon feature data - $(date -u)"
+          git push https://${{ secrets.PERSONAL_GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+        fi
