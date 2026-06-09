@@ -187,10 +187,3 @@ CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0
 - Hopsworks for feature store and MLOps platform
 - EPA for AQI calculation standards and breakpoints
 
-##  Support
-
-For questions, issues, or contributions:
-- Open an issue on GitHub
-- Contact: [zainabfatimaa234@gmail.com]
-
-**Built with ❤️ for cleaner air and healthier communities in Pakistan** 🇵🇰
