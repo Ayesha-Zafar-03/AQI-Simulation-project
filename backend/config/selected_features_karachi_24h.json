@@ -1,0 +1,12 @@
+[
+  "temperature_roll_std_24h_lag24h",
+  "aqi_roll_std_48h_lag24h",
+  "aqi_roll_mean_48h_lag24h",
+  "so2_roll_mean_24h_lag24h",
+  "aqi_lag_72h",
+  "so2_roll_std_48h_lag24h",
+  "month",
+  "co_roll_std_48h_lag24h",
+  "pm25_roll_mean_48h_lag24h",
+  "no2_roll_mean_48h_lag24h"
+]

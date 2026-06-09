@@ -1,0 +1,10 @@
+[
+  "pm25_roll_mean_24h_lag72h",
+  "aqi_lag_120h",
+  "so2_roll_mean_48h_lag72h",
+  "wind_speed_roll_std_24h_lag72h",
+  "day",
+  "pm25_roll_std_48h_lag72h",
+  "aqi_roll_mean_24h_lag72h",
+  "aqi_roll_std_48h_lag72h"
+]

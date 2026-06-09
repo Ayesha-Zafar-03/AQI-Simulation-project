@@ -1,0 +1,17 @@
+[
+  "aqi_roll_mean_48h_lag48h",
+  "month",
+  "temperature_roll_mean_48h_lag48h",
+  "temperature_roll_std_48h_lag48h",
+  "temp_humidity",
+  "pm25_roll_mean_48h_lag48h",
+  "temperature",
+  "so2_roll_std_24h_lag48h",
+  "so2_roll_mean_24h_lag48h",
+  "pm10_roll_mean_48h_lag48h",
+  "day",
+  "temperature_roll_std_24h_lag48h",
+  "co_roll_mean_48h_lag48h",
+  "co_roll_std_48h_lag48h",
+  "no2_roll_std_48h_lag48h"
+]

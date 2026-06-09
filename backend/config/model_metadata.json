@@ -1,0 +1,107 @@
+{
+  "karachi": {
+    "24": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_karachi_24h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.6781273291074326,
+      "avg_rmse": 39.26003017684805,
+      "avg_mae": 30.679666167748927,
+      "features_count": 10,
+      "updated_at": "2026-06-09T17:35:28.646333",
+      "description": "ExtraTrees karachi 24h  R\u00b2=-0.678"
+    },
+    "48": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_karachi_48h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.6226289017702148,
+      "avg_rmse": 39.87502057538392,
+      "avg_mae": 31.31709495534155,
+      "features_count": 15,
+      "updated_at": "2026-06-09T17:35:51.759874",
+      "description": "ExtraTrees karachi 48h  R\u00b2=-0.623"
+    },
+    "72": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_karachi_72h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.4679074093153798,
+      "avg_rmse": 39.3598724228775,
+      "avg_mae": 30.65623371254856,
+      "features_count": 8,
+      "updated_at": "2026-06-09T17:36:14.523464",
+      "description": "ExtraTrees karachi 72h  R\u00b2=-0.468"
+    }
+  },
+  "lahore": {
+    "24": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_lahore_24h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.3865443567854244,
+      "avg_rmse": 70.98678826927063,
+      "avg_mae": 55.92537639742338,
+      "features_count": 10,
+      "updated_at": "2026-06-09T17:36:42.815514",
+      "description": "ExtraTrees lahore 24h  R\u00b2=-0.387"
+    },
+    "48": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_lahore_48h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.44985339968738225,
+      "avg_rmse": 72.73900357418462,
+      "avg_mae": 57.48966897314993,
+      "features_count": 15,
+      "updated_at": "2026-06-09T17:37:13.976727",
+      "description": "ExtraTrees lahore 48h  R\u00b2=-0.450"
+    },
+    "72": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_lahore_72h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.8544071324533811,
+      "avg_rmse": 81.74727496927828,
+      "avg_mae": 63.94590205175014,
+      "features_count": 8,
+      "updated_at": "2026-06-09T17:37:45.120550",
+      "description": "ExtraTrees lahore 72h  R\u00b2=-0.854"
+    }
+  },
+  "islamabad": {
+    "24": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_islamabad_24h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.8093635900993486,
+      "avg_rmse": 43.52673643738157,
+      "avg_mae": 35.743703917463236,
+      "features_count": 10,
+      "updated_at": "2026-06-09T17:39:28.258788",
+      "description": "ExtraTrees islamabad 24h  R\u00b2=-0.809"
+    },
+    "48": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_islamabad_48h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.5012127841195472,
+      "avg_rmse": 41.003907479790946,
+      "avg_mae": 34.24121714968047,
+      "features_count": 15,
+      "updated_at": "2026-06-09T17:39:53.767666",
+      "description": "ExtraTrees islamabad 48h  R\u00b2=-0.501"
+    },
+    "72": {
+      "model_type": "ExtraTrees",
+      "model_file": "model_islamabad_72h.pkl",
+      "model_format": "pkl",
+      "avg_r2": -0.8711219695770205,
+      "avg_rmse": 45.951160158763436,
+      "avg_mae": 38.125870157426064,
+      "features_count": 8,
+      "updated_at": "2026-06-09T17:40:17.699303",
+      "description": "ExtraTrees islamabad 72h  R\u00b2=-0.871"
+    }
+  }
+}

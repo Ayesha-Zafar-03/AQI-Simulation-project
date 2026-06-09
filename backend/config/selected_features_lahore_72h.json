@@ -1,0 +1,10 @@
+[
+  "month",
+  "temperature",
+  "temperature_roll_mean_48h_lag72h",
+  "temp_humidity",
+  "co_roll_mean_48h_lag72h",
+  "pm10_roll_mean_48h_lag72h",
+  "no2_roll_std_48h_lag72h",
+  "aqi_roll_mean_24h_lag72h"
+]

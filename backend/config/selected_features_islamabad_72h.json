@@ -1,0 +1,10 @@
+[
+  "pm10_roll_mean_48h_lag72h",
+  "wind_speed_roll_std_48h_lag72h",
+  "day",
+  "month",
+  "so2_roll_mean_24h_lag72h",
+  "co_roll_mean_24h_lag72h",
+  "temperature_roll_mean_48h_lag72h",
+  "temperature_roll_std_24h_lag72h"
+]

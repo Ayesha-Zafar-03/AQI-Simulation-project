@@ -1,0 +1,12 @@
+[
+  "co_roll_std_48h_lag24h",
+  "day",
+  "temperature_roll_mean_48h_lag24h",
+  "month",
+  "wind_speed_roll_mean_48h_lag24h",
+  "o3_roll_mean_24h_lag24h",
+  "humidity_roll_mean_48h_lag24h",
+  "aqi_roll_mean_24h_lag24h",
+  "humidity_roll_std_48h_lag24h",
+  "co_roll_mean_48h_lag24h"
+]
