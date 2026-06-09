@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+.cache/
+*.log
+git_installer.exe
+audit.py
+test_forecast.py
+AQI-Prediction-3-Day-Forecast-main/
